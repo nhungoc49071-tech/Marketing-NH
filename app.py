@@ -1,4 +1,4 @@
-import streamlit as st
+ import streamlit as st
 import pandas as pd
 from io import BytesIO
 
@@ -146,6 +146,9 @@ if page == "👤 Nhập khách hàng":
                 customer
             )
 
+
+            st.success(
+                "✅ Đã lưu thông tin khách hàng!"
 )
 
 
@@ -291,5 +294,3 @@ elif page == "🔐 Admin":
                 ),
                 use_container_width=True
             )
-            st.success(
-                "✅ Đã lưu thông tin khách hàng!"
